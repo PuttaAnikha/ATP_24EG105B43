@@ -1,0 +1,77 @@
+###read all the users
+GET http://localhost:4000/user-api/users
+
+###read all the users(request to protected route)
+GET http://localhost:4000/user-api/users
+Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFuaUBnbWFpbC5jb20iLCJpYXQiOjE3NzI4NzcyMzMsImV4cCI6MTc3Mjk2MzYzM30.ONoFBmeZL0TCkm6sFaZoA4CUF5n-8_n6DQGl7ThQfN0; Path=/; HttpOnly; SameSite=Lax
+
+###read user by the id
+
+GET http://localhost:4000/user-api/users/69abf3e8ab6e3db6d491d552
+
+###create new user
+POST http://localhost:4000/user-api/users
+Content-Type: application/json
+
+//body of the post rqst
+{
+ "userName":"swathi",
+ "password":"swathi",
+ "email":"swat@gmail.com",
+ "age":20
+}
+###update the user
+PUT http://localhost:4000/user-api/users/69abf57e550203d675ea5f6e
+Cookie: Set-Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFuaUBnbWFpbC5jb20iLCJpYXQiOjE3NzI4Nzc0NTcsImV4cCI6MTc3Mjk2Mzg1N30.wm1fQsfUX-8UNrfOaa6wqFSn2ZpzgIlw3h-74Jr3MR8; Path=/; HttpOnly; SameSite=Lax
+Content-Type: application/json
+
+//body of the put rqst
+{
+ "userName":"anikha",
+ "password":"anikha",
+ "email":"ani@gmail.com",
+ "age":21
+}
+
+###login
+POST http://localhost:4000/user-api/auth 
+Content-Type:  application/json
+
+{"email":"ani@gmail.com",
+  "password":"anikha"
+}
+//we can use verbs since we are not creating something new
+###delete the user by id
+DELETE http://localhost:4000/user-api/users/69aa8a448924ee8b0c35d0b9
+//we can enter the data we want to delete after the end point
+
+###create new product
+POST http://localhost:4000/product-api/products
+Content-Type: application/json
+
+{
+    "productId":101,
+    "productName":"laptop",
+    "price":40000,
+    "brand":"hp"
+}
+
+###get all products
+GET http://localhost:4000/product-api/products
+
+###get productby id
+GET http://localhost:4000/product-api/products/69aaa982f1770fa26eb2ecad
+
+###update product by id
+PUT http://localhost:4000/product-api/products/69aaa982f1770fa26eb2ecad
+Content-Type: application/json
+
+{
+    "productId":101,
+    "productName":"laptop",
+    "price":30000,
+    "brand":"dell"
+}
+
+###delete product by id
+DELETE http://localhost:4000/product-api/products/69aaa982f1770fa26eb2ecad
