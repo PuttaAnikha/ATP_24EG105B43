@@ -1,0 +1,15 @@
+ECHO is on.
+# Ignore node_modules
+node_modules/
+
+# Ignore logs
+*.log
+
+# Ignore environment files
+.env
+
+# Ignore lock files
+package-lock.json
+
+# Ignore temporary files
+*.tmp
