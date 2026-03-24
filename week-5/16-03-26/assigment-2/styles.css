@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+/* Navbar */
+.navbar {
+  background: #eee;
+  padding: 15px;
+}
+
+.nav-links {
+  display: flex;             
+  justify-content: center;
+  gap: 40px;
+  list-style: none;           }
+
+/* Main section */
+.main {
+  height: 90vh;
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+  background: #eaf2f8;
+}
+
+/* Card container */
+.card-container {
+  display: flex;            
+  gap: 25px;
+}
+
+/* Card */
+.card {
+  width: 220px;
+  background: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+/* Tags */
+/*.tag {
+  font-size: 12px;
+  color: orange;
+  margin: 8px 0;
+}
+
+.tag.blue {
+  color: blue;
+}
+
+.tag.pink {
+  color: deeppink;
+}
