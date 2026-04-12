@@ -1,0 +1,31 @@
+POST  http://localhost:4000/emp-api/employees
+Content-Type: application/json
+
+{
+    "name":"Anikha",
+    "email":"anikha@gmail.com",
+    "mobile":"9703976659",
+    "designation":"HR",
+    "companyName":"Google"
+}
+
+###
+GET  http://localhost:4000/emp-api/employees
+
+###
+PUT   http://localhost:4000/emp-api/employees/69cb4f2406025da7f94a77a3
+Content-Type: application/json
+
+{
+    
+    "name":"Swathi",
+    "email":"anikha@gmail.com",
+    "mobile":"9703976659",
+    "designation":"Employee",
+    "companyName":"Google"
+
+}
+
+###
+DELETE http://localhost:4000/emp-api/employees/69cb4f2406025da7f94a77a3
+
