@@ -14,22 +14,24 @@ const movies = [
 
 
 //Tasks:
-  //  1. filter() only "Sci-Fi" movies
-  let select=movies.filter(movie=>movie.name="Sci-Fi")
-  console.log(select)
-    //2. map() to return:
-      //      "Inception (8.8)"
-      let s1=movies.map(movie=>movie.title +" " + movie.rating)
-      console.log(s1)
+  //1.filter() only "Sci-Fi" movies
+    let select=movies.filter(movie=>movie.name="Sci-Fi")
+    console.log(select)
 
-    //3. reduce() to find average movie rating
+  //2.map() to return:
+  //"Inception (8.8)"
+    let s1=movies.map(movie=>movie.title +" " + movie.rating)
+    console.log(s1)
+
+  //3.reduce() to find average movie rating
     let sumRating=movies.reduce((acc,rating)=>acc+rating.rating,0)
     let averageRating=sumRating/movies.length
     console.log(averageRating)
 
- //   4. find() movie "Joker"
- let findMovie=movies.find(movie=>movie.title=="Joker")
- console.log(findMovie)
-   // 5. findIndex() of "Avengers"
-let movieIndex=movies.findIndex(movie=>movie.title==="Avengers")
-console.log(movieIndex)
+  //4.find() movie "Joker"
+    let findMovie=movies.find(movie=>movie.title=="Joker")
+    console.log(findMovie)
+
+  //5. findIndex() of "Avengers"
+    let movieIndex=movies.findIndex(movie=>movie.title==="Avengers")
+    console.log(movieIndex)

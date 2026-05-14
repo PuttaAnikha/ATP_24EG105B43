@@ -40,10 +40,10 @@ Requirements:
         isAvailable;
         constructor(title,author,pages,isAvailable)
         {
-this.title=title;
-this.author=author;
-this.pages=pages;
-this.isAvailable=isAvailable;
+           this.title=title;
+           this.author=author;
+           this.pages=pages;
+            this.isAvailable=isAvailable;
         }
         borrow()
         {
@@ -92,9 +92,7 @@ this.isAvailable=isAvailable;
       //iv. Count how many books are "long books" (more than 300 pages)
       const books=[b1,b2,b3,b4,b5];
       let longCount=books.filter(bk=>bk.isLongBook());
-    console.log(longCount.length)
-      
-
-      //v. List all available books*/
-    let available=books.filter(book=>book.isAvailable)
-    console.log(available)
+       console.log(longCount.length)
+      /*v. List all available books*/
+      let available=books.filter(book=>book.isAvailable)
+      console.log(available)

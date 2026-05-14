@@ -7,7 +7,7 @@
         console.log("OTP Sent Successfully")
         console.log("enter the otp")
        // Start 10-second countdown
-       let seconds=10;
+        let seconds=10;
         let intervalId=setInterval(()=>
         {
             seconds--;

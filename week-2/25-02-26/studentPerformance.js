@@ -15,35 +15,35 @@ const students = [
 
 //Tasks:
    // 1. filter() students who passed (marks ≥ 40)
-   let s1=students.filter(mark=>mark.marks>=40)
-   console.log(s1)
+      let s1=students.filter(mark=>mark.marks>=40)
+      console.log(s1)
     
    /*2. map() to add a grade field
               ≥90 → A
               ≥75 → B
               ≥60 → C
               else → D*/
-   let s2=students.map((grades)=>
-{let grade;
-    if(grades.marks>=90)
+      let s2=students.map((grades)=>
+      {let grade;
+        if(grades.marks>=90)
         students.grade="A"
-    else if(grades.marks>=75&&grades.marks<90)
+        else if(grades.marks>=75&&grades.marks<90)
         students.grade="B"
-    else if(grades.marks>=60&&grades.marks<75)
-       students. grade='C'
-    else
-       students. grade="D"
-    return students.grade
-})
+        else if(grades.marks>=60&&grades.marks<75)
+        students. grade='C'
+        else
+        students. grade="D"
+        return students.grade
+      })
 
-   console.log(s2)
+       console.log(s2)
   // 3. reduce() to calculate average marks
-  let s3=students.reduce((acc,mark)=>acc+mark.marks,0)
-  let avg=s3/students.length
-  console.log(avg)
+       let s3=students.reduce((acc,mark)=>acc+mark.marks,0)
+       let avg=s3/students.length
+       console.log(avg)
   // 4. find() the student who scored 92
-  let s4=students.find(name=>name.marks=92)
-  console.log(s4)
-  // 5. findIndex() of student "Kiran"
-let s5=students.findIndex((student)=>student.name==="Kiran")
-console.log(s5)
+       let s4=students.find(name=>name.marks=92)
+       console.log(s4)
+ // 5. findIndex() of student "Kiran"
+      let s5=students.findIndex((student)=>student.name==="Kiran")
+      console.log(s5)
