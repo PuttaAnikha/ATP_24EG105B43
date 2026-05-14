@@ -3,7 +3,7 @@ GET http://localhost:4000/user-api/users
 
 ###read all the users(request to protected route)
 GET http://localhost:4000/user-api/users
-Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFuaUBnbWFpbC5jb20iLCJpYXQiOjE3NzI4NzcyMzMsImV4cCI6MTc3Mjk2MzYzM30.ONoFBmeZL0TCkm6sFaZoA4CUF5n-8_n6DQGl7ThQfN0; Path=/; HttpOnly; SameSite=Lax
+Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFuaUBnbWFpbC5jb20iLCJpYXQiOjE3Nzg3NDc1NzAsImV4cCI6MTc3ODc0NzU3MH0.HXMw00dBinpfx7uwPSyC4CCSv4DIYSJM3D46gsid3YM; Path=/; HttpOnly; SameSite=Lax
 
 ###read user by the id
 
