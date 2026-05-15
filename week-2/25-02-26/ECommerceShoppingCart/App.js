@@ -3,7 +3,7 @@ import {
   getAllProducts, 
   searchProducts, 
   getProductsByCategory 
-} from './product.js';
+} from './Product.js';
 
 import { 
   addToCart, 
@@ -11,9 +11,9 @@ import {
   getCartTotal, 
   updateQuantity,
   removeFromCart 
-} from './cart.js';
+} from './Cart.js';
 
-import { processPayment } from './payment.js';
+import { processPayment } from './Payment.js';
 
 console.log('=== E-Commerce Store ===\n');
 

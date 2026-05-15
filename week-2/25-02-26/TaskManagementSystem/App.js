@@ -1,4 +1,4 @@
-import{addTask,getAllTasks,completeTask} from './task.js'
+import{addTask,getAllTasks,completeTask} from './Task.js'
 //add a task
 addTask("eating","high",'2024-12-12')
 addTask("sleeping","low",'2026-02-27')

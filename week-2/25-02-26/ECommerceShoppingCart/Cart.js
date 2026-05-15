@@ -1,5 +1,5 @@
  // cart.js - Shopping cart operations
-import { getProductById, checkStock } from './product.js';
+import { getProductById, checkStock } from './Product.js';
 
 let cartItems = [];
 

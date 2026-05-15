@@ -1,7 +1,7 @@
 // payment.js - Payment processing
-import { reduceStock } from './product.js';
-import { getCartItems, getCartTotal, clearCart } from './cart.js';
-import { applyDiscount } from './discount.js';
+import { reduceStock } from './Product.js';
+import { getCartItems, getCartTotal, clearCart } from './Cart.js';
+import { applyDiscount } from './Discount.js';
 
 // Validate payment method
 export function validatePaymentMethod(method) {
